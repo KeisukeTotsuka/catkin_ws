@@ -1,0 +1,11 @@
+controller_list:
+  - name: fake_single_controller
+    joints:
+      - Link1_2_Link2
+      - Link2_2_Link3
+      - Link3_2_Link4
+      - Link4_2_Link5
+      - Link5_2_Link6
+      - Link6_2_Link7
+      - Link7_2_Link8
+      - Link8_2_Link9

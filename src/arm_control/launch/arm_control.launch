@@ -1,0 +1,17 @@
+<launch>
+
+  <!-- Load joint controller configurations from YAML file to parameter server -->
+  <rosparam file="$(find arm_control)/config/arm_control.yaml" command="load"/>
+
+  <!-- load the controllers -->
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+    output="screen" ns="/arm" args="Link1_2_Link2_position_controller Link2_2_Link3_position_controller Link3_2_Link4_position_controller Link4_2_Link5_position_controller Link5_2_Link6_position_controller Link6_2_Link7_position_controller Link7_2_Link8_position_controller Link8_2_Link9_position_controller joint_state_controller"/>
+
+  <!-- convert joint states to TF transforms for rviz, etc -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+    respawn="false" output="screen">
+    <remap from="/joint_states" to="/arm/joint_states" />
+  </node>
+
+</launch>
+

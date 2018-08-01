@@ -1,0 +1,35 @@
+digraph G {
+node [shape=box];
+"world" [label="world"];
+"base_link" [label="base_link"];
+"Link1" [label="Link1"];
+"Link2" [label="Link2"];
+"Link3" [label="Link3"];
+"Link4" [label="Link4"];
+"Link5" [label="Link5"];
+"Link6" [label="Link6"];
+"Link7" [label="Link7"];
+"Link8" [label="Link8"];
+"Link9" [label="Link9"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"world" -> "world_2_base_link" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"world_2_base_link" -> "base_link"
+"base_link" -> "base_link_2_Link1" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"base_link_2_Link1" -> "Link1"
+"Link1" -> "Link1_2_Link2" [label="xyz: 0 0 0.1 \nrpy: 0 -0 0"]
+"Link1_2_Link2" -> "Link2"
+"Link2" -> "Link2_2_Link3" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"Link2_2_Link3" -> "Link3"
+"Link3" -> "Link3_2_Link4" [label="xyz: 0 0 0.1 \nrpy: 0 -0 0"]
+"Link3_2_Link4" -> "Link4"
+"Link4" -> "Link4_2_Link5" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"Link4_2_Link5" -> "Link5"
+"Link5" -> "Link5_2_Link6" [label="xyz: 0 0 0.1 \nrpy: 0 -0 0"]
+"Link5_2_Link6" -> "Link6"
+"Link6" -> "Link6_2_Link7" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"Link6_2_Link7" -> "Link7"
+"Link7" -> "Link7_2_Link8" [label="xyz: 0 0 0.1 \nrpy: 0 -0 0"]
+"Link7_2_Link8" -> "Link8"
+"Link8" -> "Link8_2_Link9" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"Link8_2_Link9" -> "Link9"
+}

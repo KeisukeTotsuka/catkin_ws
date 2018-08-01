@@ -1,0 +1,2 @@
+3dofarm:6dofarm:6dofarm_control:6dofarm_gazebo:6dofarm_moveit_config:8dofarm:8dofarm_control:8dofarm_gazebo:8dofarm_moveit_config:arm:arm_control:arm_gazebo:arm_moveit_config:diff_mobile_robot:totsuka_arm:totsuka_arm_moveit_config
+-DCATKIN_DEVEL_PREFIX=/home/rsdlab/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/rsdlab/catkin_ws/install -G Unix Makefiles

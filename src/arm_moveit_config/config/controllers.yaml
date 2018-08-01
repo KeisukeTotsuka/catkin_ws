@@ -1,0 +1,16 @@
+controller_manager_ns: controller_manager
+controller_list:
+  - name: arm/arm_joint_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - Link1_2_Link2
+      - Link2_2_Link3
+      - Link3_2_Link4
+      - Link4_2_Link5
+      - Link5_2_Link6
+      - Link6_2_Link7
+      - Link7_2_Link8
+      - Link8_2_Link9
+

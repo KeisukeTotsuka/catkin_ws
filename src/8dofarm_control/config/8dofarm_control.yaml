@@ -1,0 +1,39 @@
+8dofarm:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+
+  # Position Controllers ---------------------------------------
+  Link1_2_Link2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Link1_2_Link2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Link2_2_Link3_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Link2_2_Link3
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Link3_2_Link4_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Link3_2_Link4
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Link4_2_Link5_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Link4_2_Link5
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Link5_2_Link6_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Link5_2_Link6
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Link6_2_Link7_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Link6_2_Link7
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+ Link7_2_Link8_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Link7_2_Link8
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+ Link8_2_Link9_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Link8_2_Link9
+    pid: {p: 100.0, i: 0.01, d: 10.0}

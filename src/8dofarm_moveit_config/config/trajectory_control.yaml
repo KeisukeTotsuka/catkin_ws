@@ -1,0 +1,27 @@
+8dofarm:
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+
+  8dofarm_joint_controller:
+    type: "effort_controllers/JointTrajectoryController"
+    joints:
+      - Link1_2_Link2
+      - Link2_2_Link3
+      - Link3_2_Link4
+      - Link4_2_Link5
+      - Link5_2_Link6
+      - Link6_2_Link7
+      - Link7_2_Link8
+      - Link8_2_Link9
+
+    gains:
+      Link1_2_Link2: {p: 100.0, i: 0.01, d: 10.0}
+      Link2_2_Link3: {p: 100.0, i: 0.01, d: 10.0}
+      Link3_2_Link4: {p: 100.0, i: 0.01, d: 10.0}
+      Link4_2_Link5: {p: 100.0, i: 0.01, d: 10.0}
+      Link5_2_Link6: {p: 100.0, i: 0.01, d: 10.0}
+      Link6_2_Link7: {p: 100.0, i: 0.01, d: 10.0}
+      Link7_2_Link8: {p: 100.0, i: 0.01, d: 10.0}
+      Link8_2_Link9: {p: 100.0, i: 0.01, d: 10.0}
+

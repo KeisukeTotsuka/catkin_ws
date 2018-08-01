@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: 8dofarm
+    relative_path: urdf/8dofarm.urdf
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/8dofarm.srdf
+  CONFIG:
+    author_name: keisuke totsuka
+    author_email: 183432013@ccmailg.meijo-u.ac.jp
+    generated_timestamp: 1530648818
